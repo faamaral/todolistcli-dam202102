@@ -62,7 +62,7 @@ export function Home() {
         data={tasks}
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
-          <TaskCard title={item.name} onPress={(handleRemoveTask(item.id))} />
+          <TaskCard title={item.name} onPress={() => (handleRemoveTask(item.id))} />
         )
         }
       />
